@@ -1,0 +1,65 @@
+.container{
+    border: 2px solid black;
+    display: grid;
+    width: 80vw;
+    height: 100vh;
+    /* grid-template-columns: [p]120px [d]100px [t]; */
+    /* grid-template-rows: 100px 100px 100px; */
+    /* grid-template-areas: "nav nav nav  "
+                         "side article article"
+                         "footer footer footer"; */
+/* grid-template-columns: 1fr 2fr 1fr; */
+grid-template-columns: repeat(4,80px);
+grid-template-rows: repeat(2,80px);
+/* gap:10px 24px; */
+justify-items: center;
+align-items: center;
+align-content: end;
+place-content: center;
+
+
+    }
+    .item{
+    border: 2px solid rgb(94, 255, 0);
+    height: 55px;
+    width: 55px;
+    
+    }
+    .item-1{
+        /* background-color: rgb(255, 0, 0);
+        color: whitesmoke;
+        grid-area: nav;
+                /* grid-row: 1/2;
+                grid-column: 1/2;
+                grid-row-start: 1;
+                grid-row-end: 2; */ */
+  }
+.item-2{
+    align-self: flex-start;
+    justify-self: end;
+    /* background-color: blue;
+    color: white;
+    grid-area: article; */
+}
+.item-3{
+    /* background-color: black;
+    color: white;
+    grid-area: footer; */
+}   
+    .item-4{
+        /* background-color: brown;
+        color: white;
+        grid-area: side; */
+        /* grid-row: 1/2;
+        grid-column: d/t;
+        display: flex;
+        justify-content: center;
+        align-items: center; */
+    }
+    .item-5{
+        /* grid-area: nav; */
+    }
+    .item-6{
+        /* grid-area: article; */
+    }
+   
